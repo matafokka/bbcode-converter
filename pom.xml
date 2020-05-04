@@ -1,0 +1,41 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>io.github.matafokka</groupId>
+  <artifactId>bbcode-converter</artifactId>
+  <version>1.0</version>
+  <packaging>jar</packaging>
+
+  <name>BBCode Converter</name>
+  <description>Provides a class to effectively convert custom BBCode to HTML</description>
+  <url>http://maven.apache.org</url>
+  
+  <licenses>
+    <license>
+      <name>GNU Lesser General Public License 3.0</name>
+      <url>https://www.gnu.org/licenses/lgpl-3.0.en.html</url>
+    </license>
+  </licenses>
+  
+  <developers>
+    <developer>
+      <name>matafokka</name>
+      <organization>GitHub</organization>
+      <organizationUrl>https://github.com/matafokka/</organizationUrl>
+    </developer>
+  </developers>
+  
+  <scm>
+    <connection>scm:git:git://github.com/matafokka/bbcode-converter.git</connection>
+    <developerConnection>scm:git:ssh://github.com:matafokka/bbcode-converter.git</developerConnection>
+    <url>http://github.com/matafokka/bbcode-converter/tree/master</url>
+  </scm>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+  </dependencies>
+</project>
