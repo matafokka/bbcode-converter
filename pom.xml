@@ -9,7 +9,7 @@
 
   <name>BBCode Converter</name>
   <description>Provides a class to effectively convert custom BBCode to HTML</description>
-  <url>http://maven.apache.org</url>
+  <url>https://github.com/matafokka/bbcode-converter</url>
   
   <licenses>
     <license>
