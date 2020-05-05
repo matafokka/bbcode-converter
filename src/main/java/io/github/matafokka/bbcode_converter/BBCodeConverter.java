@@ -4,8 +4,8 @@ import java.util.ArrayList;
 
 /**
  * Converts BBCode to HTML.
- * 
- * How to use:
+ * <br>
+ * <b>How to use:</b>
  * <pre>
  * 1. Make an instance of this class:
  * 	BBCodeConverter conv = new BBCodeConverter();
@@ -18,6 +18,8 @@ import java.util.ArrayList;
  * 3. Use your converter:
  * 	String output = conv.toHtml(input);
  * </pre>
+ * 
+ * @author matafokka
  */
 public class BBCodeConverter {
 	private ArrayList<String[]> complexTags = new ArrayList<String[]>();
@@ -27,12 +29,7 @@ public class BBCodeConverter {
 	
 	/**
 	 * Constructs BBCodeConverter.
-	 * <br />
-	 * <b>addDefaultTags</b>:
-	 * <ul>
-	 * <li>If set to true, adds default tags.</li>
-	 * 	<li>Otherwise constructs BBCodeConverter with only necessary tags.</li>
-	 * </ul>
+	 * @param addDefaultTags - If set to true, adds default tags. Otherwise constructs BBCodeConverter with only necessary tags.
 	 */
 	public BBCodeConverter(boolean addDefaultTags) {
 		if (addDefaultTags) { this.addDefaultTags(); }
@@ -206,21 +203,27 @@ public class BBCodeConverter {
 	 * </ol>
 	 * 
 	 * Example uses:
-	 * <ul>
-	 * <li>A complex tag containing 2 parts:</li>
+	 * <br>
+	 * <b>A complex tag containing 2 parts:</b>
 	 * <pre>
 	 * This code:	addComplexTag("[IMG]", "&lt;img src=\"", "[/IMG]", "\"&gt;", "", "")
 	 * will replace:	[IMG]https://www.example.com/image.png[/IMG]
 	 * with:		&lt;img src="https://www.example.com/image.png"&gt;
 	 * </pre>
 	 * 
-	 * <li>A complex tag containing 3 parts</li>
+	 * <b>A complex tag containing 3 parts:</b>
 	 * <pre>
 	 * This code:	addComplexTag("[URL=https://", "&lt;a href=\"https://", "]", "\"&gt;", "[/URL]", "&lt;/a&gt;")
 	 * will replace:	[URL=https://www.example.com]Example[/URL]
 	 * with:		&lt;a href="https://www.example.com/image.png"&gt;Example&lt;/a&gt;;
 	 * </pre>
-	 * </ul>
+	 * 
+	 * @param part1 - 1st part of the tag
+	 * @param replacement1 - Replacement for the 1st part
+	 * @param part2 - 2nd part of the tag
+	 * @param replacement2 - Replacement for the 2nd part
+	 * @param part3 - 3d part of the tag. Set to "" if your tag contains only 2 parts.
+	 * @param replacement3 - Replacement for the 3d part. Set to "" if your tag contains only 2 parts.
 	 */
 	public void addComplexTag(String part1, String replacement1, String part2, String replacement2, String part3, String replacement3) {
 		complexTags.add(new String[] {
