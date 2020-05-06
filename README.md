@@ -1,5 +1,5 @@
 # BBCode Converter
-Provides a class to effectively convert custom BBCode to HTML. Also prevents XSS attacks.
+A Java library that provides a class to effectively convert custom BBCode to HTML. Also prevents XSS attacks.
 
 Grab it from maven:
 ```xml
