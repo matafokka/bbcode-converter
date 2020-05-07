@@ -17,7 +17,7 @@ You can find the documentation [here](https://javadoc.io/doc/io.github.matafokka
 # Intro
 First of all, you've got 3 types of so-called "tags":
 1. **Simple tags**. These tags contains only one so-called part (string), i.e. "\[B\]", that will be replaced with another string, i.e. "\<b\>". These tags shouldn't be closed. Also, this tags contains HTML entities.
-1. **Complex tags**. These tags can contain 2 or 3 parts. Check [addComplexTag()](https://javadoc.io/static/io.github.matafokka/bbcode-converter/1.0/io/github/matafokka/bbcode_converter/BBCodeConverter.html#getComplexTags()) for more information.
+1. **Complex tags**. These tags can contain 2 or 3 parts. Check [addComplexTag()](https://javadoc.io/static/io.github.matafokka/bbcode-converter/1.0/io/github/matafokka/bbcode_converter/BBCodeConverter.html#addComplexTag(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)) for more information.
 1. **URL entites**. Same as simple tags, but these will be used when parsing text between 1st and 2nd parts of a complex tag.
 
 Next, you need to know these rules:
